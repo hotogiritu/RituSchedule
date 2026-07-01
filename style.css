@@ -60,5 +60,21 @@ body{
 }
 
 .day:hover{
+    
     transform:scale(1.05);
+}
+.week{
+    display:grid;
+    grid-template-columns:repeat(7,1fr);
+    text-align:center;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.week div:first-child{
+    color:#ff7aa8;
+}
+
+.week div:last-child{
+    color:#6ab7ff;
 }
