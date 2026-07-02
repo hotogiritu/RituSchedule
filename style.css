@@ -78,3 +78,10 @@ body{
 .week div:last-child{
     color:#6ab7ff;
 }
+.thumb{
+  width:55px;
+  height:55px;
+  object-fit:cover;
+  border-radius:12px;
+  margin-top:8px;
+}
