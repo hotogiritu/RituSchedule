@@ -45,10 +45,3 @@ for(let day = 1; day <= lastDate; day++){
     calendar.appendChild(cell);
 
 }
-.thumb{
-    width:55px;
-    height:55px;
-    object-fit:cover;
-    border-radius:12px;
-    margin-top:8px;
-}
