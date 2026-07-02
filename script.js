@@ -1,4 +1,16 @@
-const calendar = document.getElementById("calendar");
+const schedule = {
+  3: {
+    title: "雑談配信",
+    image: "https://placehold.co/200x200",
+    comment: "まったりお話しよう♡"
+  },
+
+  5: {
+    title: "耐久配信",
+    image: "https://placehold.co/200x200",
+    comment: "目標達成まで頑張る！"
+  }
+};const calendar = document.getElementById("calendar");
 
 // 2026年7月
 const year = 2026;
@@ -19,12 +31,24 @@ for(let day = 1; day <= lastDate; day++){
     const cell = document.createElement("div");
     cell.className = "day";
 
+    if (schedule[day]) {
     cell.innerHTML = `
-        <div>
-            <strong>${day}</strong>
-        </div>
+        <strong>${day}</strong>
+        <img class="thumb" src="${schedule[day].image}">
     `;
+} else {
+    cell.innerHTML = `
+        <strong>${day}</strong>
+    `;
+    }
 
     calendar.appendChild(cell);
 
+}
+.thumb{
+    width:55px;
+    height:55px;
+    object-fit:cover;
+    border-radius:12px;
+    margin-top:8px;
 }
