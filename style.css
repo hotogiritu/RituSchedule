@@ -52,7 +52,7 @@ body{
     background: white;
     border-radius: 18px;
 
-    min-height: 100px;
+    min-height: 95px;
 
     padding: 8px;
 
@@ -83,8 +83,10 @@ body{
     color:#6ab7ff;
 }
 .thumb{
-    width:55px;
-    height:55px;
-    object-fit:cover;
-    border-radius:12px;
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin: 5px auto 0;
 }
