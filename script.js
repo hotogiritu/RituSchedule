@@ -27,9 +27,9 @@ for (let day = 1; day <= lastDate; day++) {
 
   if (schedule[day]) {
     cell.innerHTML = `
-      <strong>${day}</strong><br>
-      <img class="thumb" src="${schedule[day].image}" alt="">
-    `;
+<div class="date-number">${day}</div>
+<img class="thumb" src="${schedule[day].image}">
+`;
   } else {
     cell.innerHTML = `<strong>${day}</strong>`;
   }
