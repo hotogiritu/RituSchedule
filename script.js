@@ -1,13 +1,13 @@
 const schedule = {
   3: {
     title: "雑談配信",
-    image: "https://placehold.co/200x200",
+    image: "https://picsum.photos/200"
     comment: "まったりお話しよう♡"
   },
 
   5: {
     title: "耐久配信",
-    image: "https://placehold.co/200x200",
+    image: "https://picsum.photos/200"
     comment: "目標達成まで頑張る！"
   }
 };const calendar = document.getElementById("calendar");
