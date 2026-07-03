@@ -1,49 +1,38 @@
 const schedule = {
   3: {
     title: "雑談配信",
-    image: "https://picsum.photos/200",
-    comment: "まったりお話しよう♡"
+    image: "https://picsum.photos/80"
   },
-
   5: {
     title: "耐久配信",
-    image: "https://picsum.photos/200",
-    comment: "目標達成まで頑張る！"
+    image: "https://picsum.photos/81"
   }
 };
 
 const calendar = document.getElementById("calendar");
 
-// 2026年7月
 const year = 2026;
-const month = 6; // JavaScriptは0が1月
+const month = 6;
 
 const firstDay = new Date(year, month, 1).getDay();
 const lastDate = new Date(year, month + 1, 0).getDate();
 
-// 空白
-for(let i = 0; i < firstDay; i++){
-    const blank = document.createElement("div");
-    calendar.appendChild(blank);
+for (let i = 0; i < firstDay; i++) {
+  calendar.appendChild(document.createElement("div"));
 }
 
-// 日付
-for(let day = 1; day <= lastDate; day++){
+for (let day = 1; day <= lastDate; day++) {
+  const cell = document.createElement("div");
+  cell.className = "day";
 
-    const cell = document.createElement("div");
-    cell.className = "day";
-
-    if (schedule[day]) {
+  if (schedule[day]) {
     cell.innerHTML = `
-        <strong>${day}</strong>
-        <img class="thumb" src="${schedule[day].image}">
+      <strong>${day}</strong><br>
+      <img class="thumb" src="${schedule[day].image}" alt="">
     `;
-} else {
-    cell.innerHTML = `
-        <strong>${day}</strong>
-    `;
-    }
+  } else {
+    cell.innerHTML = `<strong>${day}</strong>`;
+  }
 
-    calendar.appendChild(cell);
-
+  calendar.appendChild(cell);
 }
