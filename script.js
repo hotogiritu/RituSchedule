@@ -1,11 +1,16 @@
 const schedule = {
   3: {
     title: "雑談配信",
-    image: "https://picsum.photos/80"
+    time: "21:00〜",
+    image: "https://picsum.photos/80",
+    comment: "まったりお話しよう♡"
   },
+
   5: {
     title: "耐久配信",
-    image: "https://picsum.photos/81"
+    time: "20:00〜",
+    image: "https://picsum.photos/81",
+    comment: "目標達成まで頑張る！"
   }
 };
 
