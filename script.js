@@ -39,5 +39,20 @@ for (let day = 1; day <= lastDate; day++) {
     cell.innerHTML = `<strong>${day}</strong>`;
   }
 
+  cell.addEventListener("click", () => {
+
+    if(schedule[day]){
+
+        alert(
+`${schedule[day].title}
+
+⏰ ${schedule[day].time}
+
+💬 ${schedule[day].comment}`
+        );
+
+    }
+
+});
   calendar.appendChild(cell);
 }
