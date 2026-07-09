@@ -42,15 +42,13 @@ for (let day = 1; day <= lastDate; day++) {
   cell.addEventListener("click", () => {
 
     if(schedule[day]){
-
-        alert(
+alert(
 `${schedule[day].title}
 
 ⏰ ${schedule[day].time}
 
 💬 ${schedule[day].comment}`
-        );
-
+);
     }
 
 });
